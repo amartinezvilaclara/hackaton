@@ -1,0 +1,22 @@
+
+@		/Docentes				/{DNI}				/Dias				/{DiaConcreto}
+
+C - post	Crear nuevo docente			x				Crear nueva disponibilidad	x
+R - put		listar todos los docentes		listar datos docente {DNI}	listar disponibilidad gral.	listar disponibilidad para {DiaConcreto}
+U - get		x					update datos docente {DNI}	update disponibilidad gral.	update disponibilidad para {DiaConcreto}
+D - delete	x					delete docente {DNI}		eliminar dias sin disponibilidad eliminar disponibilidad para {DiaConcreto}
+
+NOTAS:
+
+- la funcionalidad de {DiaConcreto} es extra, no necesaria para los requerimientos de esta primera entrega.
+- El administrador/ coordinador puede acceder a todas las funciones de la API REST.
+  El docente solo puede acceder a las funciones R y U de {DNI} y todas las de /Dias y /{DiaConcreto}
+
+FUNCIONES:
+
+- Crear nuevo docente: recoge los datos de un formulario y los introduce en la BD
+- listar todos los docentes: se genera un html listando todos los docentes (nombre, apellido?)
+- listar datos docente {DNI}: html con los datos del docente
+- update datos docente {DNI}: recoger datos con formulario y update DB
+- delete docente
+- ...
