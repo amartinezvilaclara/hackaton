@@ -2,15 +2,13 @@
 -----------HACKATON---------------------------------------
 ----------------------------------------------------------
 
-Folder description:
+Contenido de las carpetas:
 
-Documentation: description of the project. 
-				API REST description.
-				Other documentation.
+Documentacion: Descripcion y requisitos del proyecto.
+				Descripcion de la API REST.
 				
 
-DB: dataBase folder.
-	dataBase models and sql code.
+DB: Base de Datos: modelos, codigo SQL.
 	
 BackEnd:
 
