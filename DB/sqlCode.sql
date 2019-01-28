@@ -1,0 +1,26 @@
+CREATE DATABASE IF NOT EXISTS hackaton_bcn_activa;
+USE hackaton_bcn_activa;
+
+CREATE TABLE Teacher (
+	Name			VARCHAR(25) NOT NULL,
+	FirstSurname 	VARCHAR(50) NOT NULL,
+	SecondSurname	VARCHAR(50),
+	DNI				VARCHAR(10) NOT NULL PRIMARY KEY,
+	DOB				DATE NOT NULL,
+	Telephon		VARCHAR(12),
+	Address			VARCHAR(100)
+);
+
+CREATE TABLE TimeTableDay (
+	ConcreteDay		DATE NOT NULL,
+	DNI				VARCHAR(10) NOT NULL,
+	Schedule		VARCHAR(10),	
+	FOREIGN KEY (DNI)
+		REFERENCES Teacher (DNI),
+	PRIMARY KEY (ConcreteDay, DNI)
+);
+
+CREATE TABLE User (
+	Username		VARCHAR(25) NOT NULL PRIMARY KEY,
+	Password		VARCHAR(25) NOT NULL
+);
